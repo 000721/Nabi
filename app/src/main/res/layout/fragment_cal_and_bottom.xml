@@ -3,38 +3,36 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
+
+    android:layout_width="338dp"
+    android:layout_height="362dp"
+    android:background="@drawable/calender_frame_rectangle"
     tools:context=".fragment.CalAndBottom"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:elevation="3dp"
+    >
 
-<!--    달력-->
-    <com.prolificinteractive.materialcalendarview.MaterialCalendarView
-        android:id="@+id/calendarView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:mcv_selectionColor="@color/white"
-        app:mcv_showOtherDates="defaults" />
+        <!--    달력-->
+        <com.prolificinteractive.materialcalendarview.MaterialCalendarView
+            android:id="@+id/calendarView"
+            android:layout_width="338dp"
+            android:layout_height="362dp"
 
-<!--    달력 밑에-->
-    <FrameLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
 
+
+
+            app:mcv_selectionColor="@color/white"
+            app:mcv_showOtherDates="defaults" />
+
+
+<!--    달력 밑에
         <Button
             android:id="@+id/diary_write"
-            android:layout_width="match_parent"
-            android:layout_height="100dp"
-            android:text="여기누르면 추가" />
-
-
-
-
-    </FrameLayout>
-
-
-
-
-
+            android:layout_width="324dp"
+            android:layout_height="51dp"
+            android:layout_marginLeft="17dp"
+            android:background="@drawable/btnwrite"
+             />
+        -->
 
 </LinearLayout>
